@@ -4,8 +4,8 @@
         <v-app-bar color="#202020">
           <v-toolbar-title class="logo">SearchMovie</v-toolbar-title> 
           <div class="btns">
-            <v-btn class="btn" icon=""></v-btn>  
-            <v-btn class="btn" icon=""></v-btn>  
+            <v-btn class="btn" icon="mdi-open-in-new"></v-btn>  
+            <v-btn class="btn" icon="mdi-open-in-new"></v-btn>  
             <v-btn class="btn" icon=""></v-btn>
           </div>
         </v-app-bar>
@@ -13,8 +13,7 @@
     </div>
   </template>
   
-  <script setup>
-  
+  <script>
   </script>
   
   <style scoped>
