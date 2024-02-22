@@ -1,13 +1,22 @@
 <template>
-  <div>
-    
+  <div class="app">
+    <header-menu/>
   </div>
 </template>
 
-<script setup>
-
+<script>
+import HeaderMenu from './components/HeaderMenu.vue';
+export default {
+  components:{
+    HeaderMenu
+  }
+};
 </script>
 
-<style scoped>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
 
 </style>
