@@ -1,14 +1,17 @@
 <template>
   <div class="app">
-    <header-menu/>  
+    <header-menu/> 
+    <search-movie/> 
   </div>
 </template>
 
 <script>
 import HeaderMenu from './components/HeaderMenu.vue';
+import SearchMovie from './components/SearchMovie.vue';
 export default {
   components:{
-    HeaderMenu
+    HeaderMenu,
+    SearchMovie
   }
 };
 </script>
@@ -21,5 +24,7 @@ export default {
 .app{
   height: 100vh;
   background-color: #2C3E50;
+  display: flex;
+  flex-direction: column;
 }
 </style>
