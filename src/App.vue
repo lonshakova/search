@@ -1,6 +1,6 @@
 <template>
   <div class="app">
-    <header-menu/>
+    <header-menu/>  
   </div>
 </template>
 
@@ -18,5 +18,8 @@ export default {
   margin: 0;
   padding: 0;
 }
-
+.app{
+  height: 100vh;
+  background-color: #2C3E50;
+}
 </style>
