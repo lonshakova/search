@@ -1,23 +1,8 @@
 <template>
     <div class="search-movie">
-      <v-card
-    class="mx-auto"
-    color="grey-lighten-3"
-    max-width="400"
-  >
-    <v-card-text>
-      <v-text-field
-        :loading="loading"
-        density="compact"
-        variant="solo"
-        label="Search templates"
-        append-inner-icon="mdi-magnify"
-        single-line
-        hide-details
-        @click:append-inner="onClick"
-      ></v-text-field>
-    </v-card-text>
-  </v-card>
+      <v-text-field class="search" variant="regular"><span class="material-symbols-outlined">
+        search
+        </span></v-text-field>
     </div>
   </template>
   
@@ -29,5 +14,20 @@
   </script>
   
   <style>
-
+    .search-movie{
+      margin-top: 120px;
+      margin-left: 74px;
+      border-radius: 30px;
+    }
+    .search{
+      height: 65px;
+      width: 640px;
+      background-color: #F3F7F8;
+      border-radius: 30px;
+      display: flex;
+      justify-content: end;
+    }
+    .material-symbols-outlined{
+      color:#BDC3C7;
+    }
   </style>
