@@ -1,13 +1,13 @@
 <template>
   <div class="search-movie">
     <div class="search">
-      <v-text-field class="text-h1" placeholder="Введите название фильма..." variant="plain"></v-text-field>
+      <v-text-field class="text" placeholder="Введите название фильма..." variant="plain"></v-text-field>
       <span class="material-symbols-outlined" @click="console.log(2)">
         search
       </span>
     </div>
     <div class="select">
-      <v-select :items="items" item-title="name" variant="plain"></v-select>
+      <v-select :items="items" item-title="name" variant="plain" placeholder="ФИЛЬТР"></v-select>
   </div>
 </div>
     
@@ -35,7 +35,10 @@ data(){
   margin-left: 74px;
   width: 1000px;
   display: flex;
-  
+  font-family: Arial, Helvetica, sans-serif;
+}
+.text{
+  padding-left: 10px;
 }
 .search {
   padding: 10px;
@@ -59,12 +62,14 @@ data(){
 .select {
   margin-left: 10px;
   padding-right: 0px;
-  padding: 20px;
+  padding-left: 20px;
   height: 45px;
-  width: 250px;
+  min-width: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-transform: uppercase;
+  color: #202020;
   background-color: #F3F7F8;
   border-radius: 30px;
 }
